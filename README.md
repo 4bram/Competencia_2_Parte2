@@ -5,55 +5,60 @@ Se utiliza la gramática básica para reconocer números y el operador mas "+". 
 ### PASO 1-
 CLONAR EL REPOSITORIO EJECUTANDO LOS SIGUIENTES COMANDOS
 
-powershell
+```powershell
 git clone https://github.com/4bram/Competencia-2.git
+```
 
-powershell
+```powershell
 cd Competencia-2
-
+```
 
 ### PASO 2-
 ENTRAR A LA CARPETA DEL EJERCICIO
 
-powershell
+```powershell
 cd Ejercicio_1
-
+```
 
 ### PASO 3-
 CREAR Y ACTIVAR EL ENTORNO VIRTUAL EJECUTANDO LOS SIGUIENTES COMANDOS
 
-powershell
+```powershell
 py -m venv .venv
+```
 
-powershell
+```powershell
 .\venv\Scripts\Activate.ps1
-
+```
 
 ### PASO 4-
 INSTALAR EL RUNTIME DE ANTLR PARA PHYTON EJECUTANDO EL SIGUIENTE COMANDO
 
-powershell
+```powershell
 pip install -r requirements.txt
-
+```
 
 ### PASO 5-
 GENERAR EL PARSER Y EL LEXER EJECUTANDO EL SIGUENTE COMANDO 
 
-powershell
+```powershell
 java -jar $env:CLASSPATH -Dlanguage=Python3 -no-listener.\Expr.g4
+```
 
-NOTA: Es importantes agregar al PATH el archivo:  *antlr-4.13.2-complete.jar* este archivo en el codigo se manda allamar por la variable de entorno CLASSPATH
+NOTA: Es importante agregar al PATH el archivo:  *antlr-4.13.2-complete.jar* este archivo en el codigo se manda allamar por la variable de entorno CLASSPATH
 
 
 ### PASO 6- EJECUTAR EL SCRIPT
 Opción 1 (ARCHIVO) 
-powershell
+```powershell
 py .\main.py`
+```
 
 Y SE LE ESPECIFICA LA RUTA DEL ARCHIVO PARA QUE UBIQUE DONDE SE ENCUENTRA EL TXT
 
 Opción 2 (CONSOLA) 
-powershell
-py .\Text.py`
+```powershell
+py .\main.py`
+```
 
 DAMOS ENTER Y NOS PERMITE LA ENTRADA DE TEXTO POR TERMINAL
