@@ -6,7 +6,7 @@ Se utiliza la gramática básica para reconocer números y el operador mas "+". 
 CLONAR EL REPOSITORIO EJECUTANDO LOS SIGUIENTES COMANDOS
 
 ```powershell
-git clone https://github.com/4bram/Competencia-2.git
+git clone https://github.com/4bram/Competencia_2_Parte2.git
 ```
 
 ```powershell
